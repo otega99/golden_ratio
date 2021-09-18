@@ -22,8 +22,6 @@
 }
 /* Variables */
 :root {
-  --header-text: hsl(34, 87%, 56%);
-  --info-text: hsl(0, 0%, 100%);
   --square-text: white;
 }
 
@@ -40,7 +38,7 @@
 /* Layout */
 body {
   min-height: 100vh;
-  background: #2a7373;
+  background: #f4f4f4;
   align-items: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
@@ -49,14 +47,14 @@ body {
 .text {
   width: 40vw;
   padding: 1em;
+  color: #0c6291;
 }
 .text h1 {
-  color: var(--header-text);
+  margin-bottom: 0.5em;
 }
 .text p {
   line-height: 1.4;
   font-size: 1.25rem;
-  color: var(--info-text);
 }
 /* Golden rectangle */
 .golden-rectangle {
@@ -82,43 +80,43 @@ body {
   grid-row: 1/500;
   grid-column: 1/501;
   font-size: 3rem;
-  background: hsl(34, 87%, 50%);
+  background: #e71d36;
 }
 .two {
   grid-row: 192/500;
   grid-column: 501/810;
   font-size: 2.75rem;
-  background: hsl(34, 87%, 53%);
+  background: #f2a541;
 }
 .three {
   grid-row: 1/192;
   grid-column: 619/810;
   font-size: 2.5rem;
-  background: hsl(34, 87%, 56%);
+  background: #56df56;
 }
 .four {
   grid-row: 1/119;
   grid-column: 501/619;
   font-size: 2.25rem;
-  background: hsl(34, 87%, 59%);
+  background: #05adad;
 }
 .five {
   grid-row: 119/192;
   grid-column: 501/574;
   font-size: 2rem;
-  background: hsl(34, 87%, 62%);
+  background: #0197f6;
 }
 .six {
   grid-row: 147/192;
   grid-column: 574/619;
   font-size: 1.5rem;
-  background: hsl(34, 87%, 65%);
+  background: #e99ae9;
 }
 .seven {
   grid-row: 119/147;
   grid-column: 574/619;
   font-size: 1.2rem;
-  background: hsl(34, 87%, 68%);
+  background: #e71d36;
 }
 
 /* Media queries */

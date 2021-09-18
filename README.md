@@ -1,3 +1,3 @@
 # golden_ratio
 
-A visual representation of the golden ratio with HTML and CSS
+A visual representation of the golden rectangle with HTML and CSS
