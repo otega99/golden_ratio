@@ -1,0 +1,161 @@
+/* Table of contents
+1. Fonts 
+2. Variables
+3. General styles
+4. Layout
+   4a. Text
+   4b. Golden rectangle
+5. Media queries*/
+
+/* Fonts */
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Variables */
+:root {
+  --header-text: hsl(34, 87%, 56%);
+  --info-text: hsl(0, 0%, 100%);
+  --square-text: white;
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+
+/* Layout */
+body {
+  min-height: 100vh;
+  background: #2a7373;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+/* Text */
+.text {
+  width: 40vw;
+  padding: 1em;
+}
+.text h1 {
+  color: var(--header-text);
+}
+.text p {
+  line-height: 1.4;
+  font-size: 1.25rem;
+  color: var(--info-text);
+}
+/* Golden rectangle */
+.golden-rectangle {
+  width: 60vw;
+  height: calc(60vw / 1.618);
+  padding: 2em;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(500, 1fr);
+  grid-template-columns: repeat(809, 1fr);
+}
+.square {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--square-text);
+  justify-content: center;
+  align-items: center;
+}
+.one {
+  grid-row: 1/500;
+  grid-column: 1/501;
+  font-size: 3rem;
+  background: hsl(34, 87%, 50%);
+}
+.two {
+  grid-row: 192/500;
+  grid-column: 501/810;
+  font-size: 2.75rem;
+  background: hsl(34, 87%, 53%);
+}
+.three {
+  grid-row: 1/192;
+  grid-column: 619/810;
+  font-size: 2.5rem;
+  background: hsl(34, 87%, 56%);
+}
+.four {
+  grid-row: 1/119;
+  grid-column: 501/619;
+  font-size: 2.25rem;
+  background: hsl(34, 87%, 59%);
+}
+.five {
+  grid-row: 119/192;
+  grid-column: 501/574;
+  font-size: 2rem;
+  background: hsl(34, 87%, 62%);
+}
+.six {
+  grid-row: 147/192;
+  grid-column: 574/619;
+  font-size: 1.5rem;
+  background: hsl(34, 87%, 65%);
+}
+.seven {
+  grid-row: 119/147;
+  grid-column: 574/619;
+  font-size: 1.2rem;
+  background: hsl(34, 87%, 68%);
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  body {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .text,
+  .golden-rectangle {
+    width: 90vw;
+  }
+  .golden-rectangle {
+    height: calc(90vw / 1.618);
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .one {
+    font-size: 2rem;
+  }
+  .two {
+    font-size: 1.75rem;
+  }
+  .three {
+    font-size: 1.5rem;
+  }
+  .four {
+    font-size: 1.25rem;
+  }
+  .five {
+    font-size: 1rem;
+  }
+  .six {
+    font-size: 0.75rem;
+  }
+  .seven {
+    font-size: 0.5rem;
+  }
+}
