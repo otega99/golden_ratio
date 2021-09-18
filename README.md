@@ -1,3 +1,3 @@
 # golden_rectangle
 
-A visual representation of the golden rectangle with HTML and CSS
+A visual representation of the golden rectangle in HTML and CSS
