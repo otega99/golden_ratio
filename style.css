@@ -1,11 +1,10 @@
 /* Table of contents
 1. Fonts 
-2. Variables
-3. General styles
-4. Layout
-   4a. Text
-   4b. Golden rectangle
-5. Media queries*/
+2. General styles
+3. Layout
+   3a. Text
+   3b. Golden rectangle
+4. Media queries*/
 
 /* Fonts */
 @font-face {
@@ -19,10 +18,6 @@
   src: url("./fonts/Raleway-Regular.ttf");
   font-style: normal;
   font-weight: 400;
-}
-/* Variables */
-:root {
-  --square-text: white;
 }
 
 /* General styles */
@@ -72,7 +67,7 @@ body {
 .square {
   font-weight: 700;
   text-decoration: none;
-  color: var(--square-text);
+  color: white;
   justify-content: center;
   align-items: center;
 }
